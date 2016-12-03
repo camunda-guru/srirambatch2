@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="Scripts/angular.js"></script>
+<script type="text/javascript" src="Scripts/app.js"></script>
+</head>
+<body ng-app="InsModule">
+    <div ng-controller="ClaimController">
+        <table>
+            <tr ng-repeat="obj in result">
+                <td>{{obj.PolicyNo}}</td>
+                <td>{{obj.Type}}</td>
+                <td>{{obj.InsuredAmount}}</td>
+                <td>{{obj.ExpiryDate}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
